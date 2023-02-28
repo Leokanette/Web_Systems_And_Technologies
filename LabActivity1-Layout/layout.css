@@ -1,51 +1,76 @@
-sbody{
+body *{
+    
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin: 0;
-}
-.borderStyle{
-    border: solid 2px black;
     margin: 5px;
-    flex-grow: 1;
+    border: 2px solid black;
 }
 
-body header{
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-}
-
-header #mainHeader {
-    flex-grow: 9;
-}
-header #logOut{
-    flex-grow: 1;
-}
-
-body main{
-    height: 87vh;
-    display: flex;
-    flex-direction: row;
-}
-
-main #sideBarLeft{
-    flex-grow: 1;
-}
-main #mainContent{
-    flex-grow: 8;
-}
-main #sideBarRight{
+body{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
-main #sideBarRight .borderStyle{
-    flex-grow: 1;
+.outerborder{
+    border: 2px solid rgb(255, 255, 255);
 }
-
-
-body footer{
-    display: flex;
+#mainbar{
     height: 50px;
+    flex-grow: 4;
+}
+#settings{
+    height: 50px;
+    flex-grow: 1;
+}
+#contentBox{
+    height: 90vh;
+}
+#options{
+    flex-grow: 1;
+    flex-direction: column;
+}
+#options div{
+    flex-grow: 1;
+}
+#content{
+    flex-grow: 3;
+}
+#adspace{
+    flex-grow: 1;
+}
+
+footer{
+    height: 10vh;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    #options {
+        display: none;
+    }
+    #adspace {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
